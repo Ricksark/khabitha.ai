@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khabitha AI V2 | Next-Gen Image Synthesis</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  	
+  	<meta name="title" content="Khabitha AI | Best Flux.2 AI Image Generator 2026">
+	<meta name="description" content="Generate stunning 4K AI art instantly with Khabitha AI. Powered by Flux.2 9B and Latent Diffusion.">
+  
+    <!-- Primary Meta Tags -->
+	<meta name="title" content="Khabitha AI | Best Free Flux.1 AI Image Generator 2026">
+	<meta name="description" content="Generate stunning 4K AI art instantly with Khabitha AI. Powered by Flux.1 and Latent Diffusion. Create realistic portraits, cyberpunk landscapes, and more for free.">
+	<meta name="keywords" content="Khabitha AI, AI image generator, Flux.1 AI, free AI art, text to image, Priyangshu Sarkar, AI synthesis, neural art">
+	<meta name="robots" content="index, follow">
+	<meta name="language" content="English">
+	<meta name="author" content="Priyangshu Sarkar">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://your-blog-name.blogspot.com/">
+	<meta property="og:title" content="Khabitha AI | Next-Gen Image Synthesis">
+	<meta property="og:description" content="Turn text into masterpieces in seconds. Try the Flux.1 engine on Khabitha AI today.">
+	<meta property="og:image" content="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://your-blog-name.blogspot.com/">
+	<meta property="twitter:title" content="Khabitha AI | Next-Gen Image Synthesis">
+	<meta property="twitter:description" content="Turn text into masterpieces in seconds. Try the Flux.1 engine on Khabitha AI today.">
+	<meta property="twitter:image" content="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000">
+
+	<!-- Canonical Tag -->
+	<link rel="canonical" href="https://khabithaai.blogspot.com/" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="kai.css">
+  	<!-- Cloudflare Web Analytics -->
+  	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ed4cf0e1bd9748269e3bbafd8847a286"}'></script>
+  	<!-- End Cloudflare Web Analytics -->
+  
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#020617',
+                        surface: '#0f172a',
+                        primary: '#6366f1',
+                        secondary: '#d946ef',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        glow: {
+                            '0%, 100%': { opacity: 0.5, transform: 'scale(1)' },
+                            '50%': { opacity: 0.8, transform: 'scale(1.05)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        
+</style>
+
+  
+</head>
+<body class="font-sans antialiased">
+
+  
+  
+  
+  
+    <!-- LANDING PAGE -->
+    <div id="landing-page" class="relative">
+        <!-- Animated Background Glows -->
+        <div class="fixed top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] -z-10 animate-glow"></div>
+        <div class="fixed bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[120px] -z-10 animate-glow"></div>
+
+        <!-- Header -->
+        <nav class="sticky top-0 z-50 glass border-b border-white/10 px-6 py-4">
+          
+          <!-- Inside the <nav> element, after the <span>Khabitha AI</span> div -->
+
+          
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="flex items-center gap-2 text-2xl font-extrabold tracking-tighter">
+                    <i class="ph-fill ph-bounding-box text-primary text-3xl"></i>
+                    <span>Khabitha <span class="gradient-text">AI</span></span>
+                </div>
+              
+                <!-- Inside the <nav> element, after the <span>Khabitha AI</span> div -->
+				<button onclick="toggleMobileMenu()" class="md:hidden flex items-center justify-center w-10 h-10 glass rounded-xl text-primary">
+				    <i class="ph-bold ph-list text-2xl"></i>
+				</button>
+              
+                <div id="nav-auth-section" class="hidden md:flex gap-8 items-center text-sm font-medium text-slate-300">
+    			<a href="#features" class="hover:text-primary transition-colors"><b>Features</b></a>
+    			<a href="#gallery" class="hover:text-primary transition-colors"><b>Gallery</b></a>
+                <a href="#" onclick="openPricing()" class="hover:text-primary transition-colors"><b>Pricing</b></a>
+				<a href="#" onclick="openDocs()" class="hover:text-primary transition-colors"><b>API Docs</b></a>
+                <a href="#" class="hover:text-primary transition-colors"><b>Showcase</b></a>
+                <a href="#developer" class="hover:text-primary transition-colors"><b>Developer</b></a>
+   				<!-- Inside your <nav> ... -->
+			  	<div class="relative group">
+			  	    <button class="hover:text-primary transition-colors flex items-center gap-1 font-bold">
+			  	        Ecosystem <i class="ph ph-caret-down text-[10px]"></i>
+			  	    </button>
+			  	    <div class="absolute top-full left-0 mt-5 w-48 glass-dark border border-white/10 rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-2 z-[100]">
+			  	        <a href="#" class="block px-4 py-2 hover:bg-white/5 rounded-xl text-sm font-medium transition-colors text-amber-500">MOS Main</a>
+			  	        <a href="#" class="block px-4 py-2 hover:bg-white/5 rounded-xl text-sm font-medium transition-colors text-primary">Khabitha AI</a>
+			  	        <a href="#" class="block px-4 py-2 hover:bg-white/5 rounded-xl text-sm font-medium transition-colors text-secondary">Darkbox AI</a>
+			  	        <a href="#" class="block px-4 py-2 hover:bg-white/5 rounded-xl text-sm font-medium transition-colors text-emerald-500">MWS Studio</a>
+			  	    </div>
+			  	</div>
+    			<!-- This div will be updated by JavaScript -->
+    			<div id="auth-controls" class="flex items-center gap-4">
+    			    <button onclick="handleGoogleLogin()" class="glass px-6 py-2.5 rounded-full text-white font-bold hover:bg-white/10 transition-all">
+    			        Login with Google
+    			    </button>
+    			</div>
+			</div>
+            </div>
+        </nav>
+
+      
+      
+      
+        <!-- Hero Section -->
+        <header class="pt-24 pb-20 px-6 text-center overflow-hidden">
+            <div class="max-w-4xl mx-auto relative">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-white/10 text-xs font-semibold text-slate-300 mb-8 animate-bounce">
+                    <span class="w-2 h-2 rounded-full bg-secondary"></span> 
+                    New: Khabitha AI V2 Model Integration
+                </div>
+              <!-- Statistic 1 -->
+            
+                <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tight">
+                    Imagine Anything.<br>
+                    <span class="gradient-text italic">Create Instantly.</span>
+                </h1>
+                <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                    KhabithaAI uses next-generation latent diffusion to turn your wildest text descriptions into masterpiece artwork in seconds.
+                </p>
+              
+              
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+    <!-- This button will now trigger launchApp which checks for auth -->
+    <button onclick="launchApp()" class="btn-gradient text-lg px-10 py-4 rounded-2xl font-bold flex items-center gap-2">
+        <i class="ph-bold ph-magic-wand"></i> Launch Studio
+    </button>
+    <button onclick="toggleShowcase()" class="glass px-10 py-4 rounded-2xl font-bold hover:bg-white/5 transition-all">View Showcase</button>
+</div>
+            </div>
+        </header>
+
+        <!-- Infinite Scrolling Showcase -->
+        <div class="marquee py-10 opacity-70">
+            <div class="marquee-content" id="hero-marquee">
+                <!-- Will be populated by JS -->
+            </div>
+        </div>
+
+        
+        <!-- Features Grid -->
+<section id="features" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Unmatched <span class="gradient-text">Power</span></h2>
+        <p class="text-slate-400">Advanced neural architecture designed for professional-grade synthesis.</p>
+    </div>
+    
+    <!-- Grid Layout: 1 col on mobile, 2 on tablet, 3 on desktop -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Lightning Fast -->
+        <div class="glass p-8 rounded-3xl group hover:border-primary/50 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-lightning"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Lightning Fast</h3>
+            <p class="text-slate-400 leading-relaxed">Generated images in under 5 seconds using optimized H100 GPU clusters globally.</p>
+        </div>
+      
+      	<!-- Card: B200 Clusters -->
+        <div class="glass p-8 rounded-[2.5rem] group hover:border-white/40 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-database"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Global Compute</h3>
+            <p class="text-slate-400 leading-relaxed">Powered by a decentralized network of B200 GPUs across 14 global regions.</p>
+        </div>
+
+        <!-- Card 2: Flux.1 Integration -->
+        <div class="glass p-8 rounded-3xl group hover:border-secondary/50 transition-all duration-500 transform hover:-translate-y-2 border-l-2 border-l-secondary/30">
+            <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-atom"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Khabitha AI V2 Engine</h3>
+            <p class="text-slate-400 leading-relaxed">State-of-the-art 12B parameter model for unmatched anatomical accuracy and text rendering.</p>
+        </div>
+
+        <!-- Card 3: Neural Upscaling -->
+        <div class="glass p-8 rounded-3xl group hover:border-emerald-500/50 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-500 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-arrows-out"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">4K Upscaling</h3>
+            <p class="text-slate-400 leading-relaxed">Crystal clear details. Enhance your generations to high-fidelity resolution without losing texture.</p>
+        </div>
+
+        <!-- Card 4: Advanced Prompting -->
+        <div class="glass p-8 rounded-3xl group hover:border-amber-500/50 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-500 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-brain"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Prompt Intelligence</h3>
+            <p class="text-slate-400 leading-relaxed">Our system auto-enriches simple prompts into descriptive masterpieces using LLM logic.</p>
+        </div>
+
+        <!-- Card 5: Privacy First -->
+        <div class="glass p-8 rounded-3xl group hover:border-blue-400/50 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-blue-400/10 flex items-center justify-center text-blue-400 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-shield-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Private Vault</h3>
+            <p class="text-slate-400 leading-relaxed">Your creations are yours. Optional end-to-end encryption ensures your IP remains confidential.</p>
+        </div>
+
+        <!-- Card 6: Open API -->
+        <div class="glass p-8 rounded-3xl group hover:border-white/40 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-code"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Developer Ready</h3>
+            <p class="text-slate-400 leading-relaxed">Full REST API access. Integrate Khabitha AI directly into your apps, games, or workflows.</p>
+        </div>
+      
+		<!-- Card: Khabitha AI Engine -->
+        <div class="glass p-8 rounded-[2.5rem] group hover:border-primary/50 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-brain"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Khabitha AI V2</h3>
+            <p class="text-slate-400 leading-relaxed">Our flagship latent diffusion model optimized for anatomical perfection and high-speed inference.</p>
+        </div>
+
+        <!-- Card: Darkbox X4 Engine -->
+        <div class="glass p-8 rounded-[2.5rem] group hover:border-secondary/50 transition-all duration-500 transform hover:-translate-y-2 border-l-2 border-l-secondary/30">
+            <div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-shield-checkered"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Darkbox X4</h3>
+            <p class="text-slate-400 leading-relaxed">The industry's first privacy-centric LLM engine. Process sensitive prompts with zero-data retention logs.</p>
+        </div>
+
+        <!-- Card: Khabitha OS -->
+        <div class="glass p-8 rounded-[2.5rem] group hover:border-emerald-500/50 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-500 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-globe"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Khabitha OS</h3>
+            <p class="text-slate-400 leading-relaxed">A unified neural operating system that synchronizes your generations across Web, Mobile, and VR.</p>
+        </div>
+
+        <!-- Card: 4K Upscaling (Existing) -->
+        <div class="glass p-8 rounded-[2.5rem] group hover:border-amber-500/50 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-500 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-arrows-out"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Ultra Synthesis</h3>
+            <p class="text-slate-400 leading-relaxed">Upscale your AI art to 4K resolution using our proprietary GigaPixel neural network.</p>
+        </div>
+
+        <!-- Card: Real-time API (Existing) -->
+        <div class="glass p-8 rounded-[2.5rem] group hover:border-blue-400/50 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-14 h-14 rounded-2xl bg-blue-400/10 flex items-center justify-center text-blue-400 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                <i class="ph-fill ph-code"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Quantum API</h3>
+            <p class="text-slate-400 leading-relaxed">Sub-50ms response times for developers building real-time creative applications.</p>
+        </div>
+    </div>
+</section>
+  
+      <!-- Updated Features Grid -->
+<!--section id="features" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">Unmatched <span class="gradient-text">Power</span></h2>
+        <p class="text-slate-400">The architectural pillars of the Khabitha ecosystem.</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        
+
+    </div>
+</section-->
+      
+      	<!-- Popularity Stats Section -->
+<section class="py-12 px-6 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <div class="glass p-8 md:p-12 rounded-[2.5rem] border-white/10 flex flex-col md:flex-row items-center justify-around gap-8 text-center md:text-left">
+            
+            <!-- Statistic 1 -->
+            <div class="flex flex-col items-center md:items-start">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                        <i class="ph-fill ph-trend-up text-2xl"></i>
+                    </div>
+                    <span class="text-slate-400 font-bold uppercase tracking-widest text-xs">Global Reach</span>
+                </div>
+                <div class="text-5xl md:text-6xl font-black tracking-tighter">
+                    <span id="popularity-count" class="gradient-text">0</span><span class="text-white">K+</span>
+                </div>
+                <p class="text-slate-500 mt-2 font-medium">Total Popularity Score</p>
+            </div>
+
+            <!-- Vertical Divider (Hidden on mobile) -->
+            <div class="hidden md:block w-px h-20 bg-white/10"></div>
+
+            <!-- Statistic 2 (Bonus: Active Users) -->
+            <div class="flex flex-col items-center md:items-start">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+                        <i class="ph-fill ph-users-three text-2xl"></i>
+                    </div>
+                    <span class="text-slate-400 font-bold uppercase tracking-widest text-xs">Community</span>
+                </div>
+                <div class="text-5xl md:text-6xl font-black tracking-tighter text-white">
+                    24<span class="text-secondary">/7</span>
+                </div>
+                <p class="text-slate-500 mt-2 font-medium">Creation Uptime</p>
+            </div>
+            
+        </div>
+    </div>
+</section>      
+
+        <!-- Gallery -->
+        <section id="gallery" class="py-24 px-6 bg-slate-900/30">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12 flex items-center gap-4">
+                    Community Showpiece <span class="h-[1px] bg-white/10 flex-1"></span>
+                </h2>
+                <div class="columns-1 md:columns-2 lg:columns-4 gap-6 space-y-6" id="community-gallery">
+                    <!-- JS Populated -->
+                </div>
+            </div>
+        </section>
+      
+      	<!-- SHOWCASE CHAT TRIGGER -->
+<div class="fixed bottom-6 right-6 z-[60]">
+    <button onclick="toggleShowcase()" class="group relative flex h-16 w-16 items-center justify-center rounded-full btn-gradient shadow-2xl transition-all hover:scale-110 active:scale-95">
+        <i id="chat-icon" class="ph-fill ph-chat-centered-dots text-3xl text-white transition-all"></i>
+        <i id="close-chat-icon" class="ph ph-x text-3xl text-white absolute opacity-0 transition-all"></i>
+        <span class="absolute -top-2 -right-2 flex h-5 w-5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-5 w-5 bg-secondary text-[10px] items-center justify-center font-bold">3</span>
+        </span>
+    </button>
+</div>
+
+<!-- HIDDEN SHOWCASE PANEL -->
+<div id="showcase-panel" class="fixed inset-y-0 right-0 z-[55] w-full max-w-md translate-x-full transition-transform duration-500 ease-in-out">
+    <div class="h-full glass-dark border-l border-white/10 flex flex-col shadow-2xl">
+        <!-- Panel Header -->
+        <div class="p-6 border-b border-white/5 flex justify-between items-center bg-white/5">
+            <div>
+                <h3 class="text-xl font-bold">Curated <span class="gradient-text">Showcase</span></h3>
+                <p class="text-xs text-slate-400">Latest generations by Khabitha AI</p>
+            </div>
+            <button onclick="toggleShowcase()" class="p-2 hover:bg-white/10 rounded-full transition-colors">
+                <i class="ph ph-x text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Chat-Style Content -->
+        <div class="flex-1 overflow-y-auto p-6 space-y-6 scrollbar-thin">
+            <!-- AI Message 1 -->
+            <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+                    <i class="ph-fill ph-robot text-sm"></i>
+                </div>
+                <div class="space-y-2 max-w-[85%]">
+                    <div class="glass p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed">
+                        Hey there! Check out this "Cyberpunk Oasis" I just rendered using the Flux.1 engine.
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-white/10">
+                        <img src="https://image.pollinations.ai/prompt/cyberpunk-oasis-hidden-garden-future?width=500&height=500&seed=99" alt="Showcase" class="w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Message 2 -->
+            <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+                    <i class="ph-fill ph-robot text-sm"></i>
+                </div>
+                <div class="space-y-2 max-w-[85%]">
+                    <div class="glass p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed">
+                        And this hyper-realistic portrait of a "Solar Priestess" in 16k., masterpiece, 8k, extremely detailed, highly realistic, professional lighting, cinematic colors.
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-white/10">
+                        <img src="https://image.pollinations.ai/prompt/And%20this%20hyper-realistic%20portrait%20of%20a%20%22Solar%20Priestess%22%20in%2016k.%2C%20masterpiece%2C%208k%2C%20extremely%20detailed%2C%20highly%20realistic%2C%20professional%20lighting%2C%20cinematic%20colors?width=1024&height=1024&seed=33055&model=lite&nologo=true" alt="Showcase" class="w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Message 3 -->
+            <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+                    <i class="ph-fill ph-robot text-sm"></i>
+                </div>
+                <div class="space-y-2 max-w-[85%]">
+                    <div class="glass p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed">
+                        Mythical vampire lady painting in 8k
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-white/10">
+                        <img src="https://image.pollinations.ai/prompt/mythical%20vampire%20lady%20painting%2C%20masterpiece%2C%208k%2C%20extremely%20detailed%2C%20highly%20realistic%2C%20professional%20lighting%2C%20cinematic%20colors?width=1024&height=1024&seed=7112&model=lite&nologo=true" alt="Showcase" class="w-full">
+                    </div>
+                </div>
+            </div>
+          
+            <!-- AI Message 4 -->
+            <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+                    <i class="ph-fill ph-robot text-sm"></i>
+                </div>
+                <div class="space-y-2 max-w-[85%]">
+                    <div class="glass p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed">
+                        Cyberpunk vibe city neon, masterpiece, 8k, extremely detailed, highly realistic, professional lighting, cinematic colors.
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-white/10">
+                        <img src="https://image.pollinations.ai/prompt/cyberpunk%20vibe%20city%20neon%2C%20masterpiece%2C%208k%2C%20extremely%20detailed%2C%20highly%20realistic%2C%20professional%20lighting%2C%20cinematic%20colors?width=1024&height=1024&seed=13143&model=lite&nologo=true" alt="Showcase" class="w-full">
+                    </div>
+                </div>
+            </div>
+          
+            <!-- AI Message 5 -->
+            <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+                    <i class="ph-fill ph-robot text-sm"></i>
+                </div>
+                <div class="space-y-2 max-w-[85%]">
+                    <div class="glass p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed">
+                       hot girl, masterpiece, 8k, extremely detailed, highly realistic, professional lighting, cinematic colors.
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-white/10">
+                        <img src="https://image.pollinations.ai/prompt/hot%20guirl%2C%20masterpiece%2C%208k%2C%20extremely%20detailed%2C%20highly%20realistic%2C%20professional%20lighting%2C%20cinematic%20colors?width=1024&height=1024&seed=10463&model=lite&nologo=true" alt="Showcase" class="w-full">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-4">
+                <button onclick="launchApp(); toggleShowcase();" class="text-xs font-bold text-primary uppercase tracking-widest hover:underline">
+                    Generate yours now →
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+      
+      <!-- START GOOGLE TRUST BAR -->
+<section class="py-8 px-6 relative z-10">
+    <div class="max-w-5xl mx-auto">
+        <!-- Main Container -->
+        <div class="glass rounded-[2.5rem] border-white/5 p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl transition-transform hover:scale-[1.01] duration-500">
+            
+            <!-- Left: Google Identity -->
+            <div class="flex items-center gap-5">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.1)] shrink-0">
+                    <svg viewBox="0 0 24 24" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="text-xl font-extrabold text-white leading-tight">Google Platform</h4>
+                    <p class="text-slate-400 text-sm font-medium">Official Community Rating</p>
+                </div>
+            </div>
+
+            <!-- Middle: The Star Rating -->
+            <div class="flex flex-col items-center md:items-start">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="text-4xl md:text-5xl font-black text-white italic">4.5</span>
+                    <div class="flex flex-col">
+                        <div class="flex text-amber-400 text-xl">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star-half"></i>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] ml-1">Out of 5 Stars</span>
+                    </div>
+                </div>
+                <p class="text-slate-300 text-sm">“The most intuitive image synth engine yet.”</p>
+            </div>
+
+            <!-- Right: User Proof -->
+            <div class="flex flex-col items-center md:items-end gap-3">
+                <div class="flex -space-x-3">
+                    <img class="w-10 h-10 rounded-full border-2 border-dark" src="https://i.pravatar.cc/100?u=a" alt="User">
+                    <img class="w-10 h-10 rounded-full border-2 border-dark" src="https://i.pravatar.cc/100?u=b" alt="User">
+                    <img class="w-10 h-10 rounded-full border-2 border-dark" src="https://blogger.googleusercontent.com/img/a/AVvXsEigh3ctNe9xZWGugRniOLU-Z5-mUFQomfbsEnqMAEXdBiQ5_j-FUVDs5I_h5-qXosJPalEtKHCrqkLYGDi7MJKa4c-42cBte1JPVgS3TmiSBaVt7Ibxeo_tNKVjWjfAulcv9n_BqWgcR127zaKV4ew0kyc1MbqC_5PLRBaiJAZa4mxj7Sp63QXuknXBk7M" alt="User">
+                    <img class="w-10 h-10 rounded-full border-2 border-dark" src="https://i.pravatar.cc/100?u=c" alt="User">
+                    <div class="w-10 h-10 rounded-full border-2 border-dark bg-secondary flex items-center justify-center text-xs font-black text-white">
+                        +18K
+                    </div>
+                </div>
+                <div class="text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full glass border-primary/30 text-primary">
+                    Verified Reviews
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END GOOGLE TRUST BAR -->
+
+<!-- COLLABORATE BRANDS SECTION -->
+<section class="py-16 px-6 relative overflow-hidden bg-white/[0.01] border-y border-white/5 marquee-container">
+    <div class="max-w-7xl mx-auto overflow-hidden">
+        <p class="text-center text-[10px] font-black uppercase tracking-[0.4em] text-slate-500 mb-10">Trusted & Powered by Industry Leaders</p>
+        
+     
+<div class="marquee-container">
+    <div class="animate-scroll-left">
+        <!-- Group 1 -->
+        <div class="content-group">
+                    <span class="text-xl font-bold tracking-tighter">Google Cloud</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">NVIDIA H100</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">NVIDIA B200</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">NVIDIA X100</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">NVIDIA GB200 NVL72</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Anthropic</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Meta AI</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">OpenAI</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Black Forest Labs</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Upstash</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Firebase</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+         </div>
+        <!-- Group 2 (Duplicate) -->
+        <div class="content-group">
+                    <span class="text-xl font-bold tracking-tighter">Google Cloud</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">NVIDIA H100</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">NVIDIA B200</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">NVIDIA X100</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">NVIDIA GB200 NVL72</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Anthropic</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Meta AI</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">OpenAI</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Black Forest Labs</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Upstash</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    <span class="text-xl font-bold tracking-tighter">Firebase</span>
+                    <span class="text-xl font-bold tracking-tighter"></span>
+                    </div>
+    </div>
+
+            <!-- Gradient Fades (Makes the edges look smooth) -->
+
+        </div>
+    </div>
+</section>
+      
+        <!-- Blog -->
+        <section id="blog" class="py-24 px-6 max-col-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">The Future of AI</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="rounded-3xl overflow-hidden glass hover:bg-white/5 transition-colors">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000" class="h-56 w-full object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-primary mb-2 block uppercase">Design Tips</span>
+                        <h4 class="text-xl font-bold mb-3 leading-tight">Mastering Lighting in Prompt Engineering</h4>
+                        <a href="#" class="inline-flex items-center gap-2 text-sm font-bold text-slate-300 hover:text-white transition-colors">Read Full Article <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden glass hover:bg-white/5 transition-colors">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1000" class="h-56 w-full object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-secondary mb-2 block uppercase">AI Tech</span>
+                        <h4 class="text-xl font-bold mb-3 leading-tight">How Khabitha AI V2 Changes the Game</h4>
+                        <a href="#" class="inline-flex items-center gap-2 text-sm font-bold text-slate-300 hover:text-white transition-colors">Read Full Article <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden glass hover:bg-white/5 transition-colors">
+                    <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=1000" class="h-56 w-full object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-primary mb-2 block uppercase">Business</span>
+                        <h4 class="text-xl font-bold mb-3 leading-tight">Scale Your Design Agency with Aether</h4>
+                        <a href="#" class="inline-flex items-center gap-2 text-sm font-bold text-slate-300 hover:text-white transition-colors">Read Full Article <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Integration Snippet -->
+        <section class="py-24 px-6">
+            <div class="max-w-4xl mx-auto glass rounded-[2.5rem] overflow-hidden p-1">
+                <div class="bg-dark rounded-[2.3rem] p-10 flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold mb-6">Built for Developers.</h2>
+                        <p class="text-slate-400 mb-8 leading-relaxed text-lg">Integrate our logic directly into your projects using the open API endpoint. Real-time inference made easy.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3"><i class="ph ph-check-circle text-primary text-xl"></i> REST API Compatibility</li>
+                            <li class="flex items-center gap-3"><i class="ph ph-check-circle text-primary text-xl"></i> Zero Authorization required for trial</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 w-full">
+                        <div class="glass p-6 rounded-3xl bg-surface/50 font-mono text-sm overflow-hidden relative group">
+                            <div class="absolute top-4 right-4 text-xs text-slate-500">API GET</div>
+                            <pre class="text-secondary overflow-x-auto"><span class="text-white">GET</span> /prompt/{your_text}
+?width=1024
+&height=1024
+&model=flux
+&seed=1337</pre>
+                            <div class="mt-4 p-4 rounded-xl bg-dark/80 text-primary-200 text-xs italic text-slate-400">
+                                Result: binary/image-png
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+<!-- THE MOS ECOSYSTEM SECTION -->
+<section id="ecosystem" class="py-24 px-6 relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-primary/5 rounded-full blur-[120px] -z-10"></div>
+
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black mb-4">The <span class="gradient-text">MOS</span> Ecosystem</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Exploring the frontiers of digital intelligence and web evolution.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- MOS -->
+            <div class="glass p-8 rounded-[2.5rem] border-white/10 flex flex-col items-center text-center group hover:bg-white/5 transition-all duration-500 hover:-translate-y-2">
+                <!-- SIZE: changed to w-32 h-32 | PADDING: changed to p-6 (Adjust these below) -->
+                <div class="w-32 h-32 p-2 rounded-[2rem] bg-white/5 border border-white/5 flex items-center justify-center mb-6 shadow-2xl group-hover:scale-110 group-hover:border-amber-500/30 transition-all duration-500">
+                    <img src="YOUR_MOS_LOGO_URL" alt="MOS" class="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(251,191,36,0.2)]" style="border-radius: 23px;">
+                </div>
+                <h3 class="text-2xl font-bold mb-2">MOS</h3>
+                <p class="text-xs font-black text-amber-500 uppercase tracking-widest mb-4">Parent Organization</p>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">The architectural foundation driving innovation across all digital verticals.</p>
+                <button class="mt-auto px-6 py-2 rounded-xl border border-white/10 text-xs font-bold hover:bg-white hover:text-dark transition-all">VISIT MAIN</button>
+            </div>
+
+            <!-- Khabitha AI -->
+            <div class="glass p-8 rounded-[2.5rem] border-primary/20 bg-primary/5 flex flex-col items-center text-center group hover:border-primary/50 transition-all duration-500 hover:-translate-y-2">
+                <div class="w-32 h-32 p-2 rounded-[2rem] bg-white/5 border border-white/5 flex items-center justify-center mb-6 shadow-2xl group-hover:scale-110 group-hover:border-primary/30 transition-all duration-500">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6W_y6n1Ezk-VCUZeFZHZcXxzyLVOYIJ9bc1gDmcC3v70N9QFoYYSwVCUdQ3yRxSQaDYaot-C5P0E3X_UY2ri5lLxwHOejpeVkooCtGfANd7xYHOfOpXQK1-RWZKsBsPkEuOSgzlfr-jWK0vWXgTUr-oftR-spsN6wm0o2Yf5NvIX2P0NsZ1D54IFGnjo/s932/1000320966.png" alt="Khabitha AI" class="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(99,102,241,0.2)]" style="border-radius: 23px; border: 0.5px solid black;">
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Khabitha AI V2</h3>
+                <p class="text-xs font-black text-primary uppercase tracking-widest mb-4">Neural Synthesis</p>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Next-generation image generation and latent diffusion technologies.</p>
+                <button class="mt-auto px-6 py-2 rounded-xl bg-primary/20 border border-primary/30 text-xs font-bold text-primary">CURRENT SITE</button>
+            </div>
+			
+          	<!-- MWS -->
+            <div class="glass p-8 rounded-[2.5rem] border-white/10 flex flex-col items-center text-center group hover:border-emerald-500/50 transition-all duration-500 hover:-translate-y-2">
+                <div class="w-32 h-32 p-2 rounded-[2rem] bg-white/5 border border-white/5 flex items-center justify-center mb-6 shadow-2xl group-hover:scale-110 group-hover:border-emerald-500/30 transition-all duration-500">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2mmUCl1WA0FBb4zl0kJxJ74gdnN3dAWpDlG_GOYgFNSqo6qJzH1JWfoWjK6zKqu1jUzjfhvcRHHO9z-wDMbI4d7pYbCxLzP0MT861cNg_xenB2zmuXne_idcuk5liOsrugiMPSsqFUzhB6hnXy95KasWvmDJlcMHDxxukcCqf14pCLXEmGPXA8GCzzpY/s1024/1000321016.png" alt="MWS" class="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(16,185,129,0.2)]" style="border-radius: 23px;">
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Khabitha AI V4</h3>
+                <p class="text-xs font-black text-emerald-500 uppercase tracking-widest mb-4">ULTRA REALISTIC</p>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">High-performance Next-generation image generation and latent diffusion technologies infrastructure. This site not supported.</p>
+                <button class="mt-auto px-6 py-2 rounded-xl border border-white/10 text-xs font-bold hover:bg-emerald-500 hover:text-white transition-all">COMING SOON</button>
+            </div>
+          
+            <!-- Darkbox AI -->
+            <div class="glass p-8 rounded-[2.5rem] border-white/10 flex flex-col items-center text-center group hover:border-secondary/50 transition-all duration-500 hover:-translate-y-2">
+                <div class="w-32 h-32 p-2 rounded-[2rem] bg-white/5 border border-white/5 flex items-center justify-center mb-6 shadow-2xl group-hover:scale-110 group-hover:border-secondary/30 transition-all duration-500">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinrqw2Lfxb9XuVb0Js6mk-5UOhuK-jaYAtGXhbkuwqMy9i4PQjId1GwfWkByEH9t8CAHrq8-hhqkOo78sZHkBmKllzyoMhcGfnCuLtjDbX7BrrtHqM81pYXZ7NGEibq89JVXRkk0OFfSu99wvIfdS7phrX0Hl1dX4q0niNtw6rng7yO40ZAUUodBq610M/s1046/1000320967.png" alt="Darkbox AI" class="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(217,70,239,0.2)]" style="border-radius: 23px;">
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Darkbox AI</h3>
+                <p class="text-xs font-black text-secondary uppercase tracking-widest mb-4">Privacy LLM</p>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Secure, encrypted Large Language Models for sensitive data processing.</p>
+                <button class="mt-auto px-6 py-2 rounded-xl border border-white/10 text-xs font-bold hover:bg-secondary hover:text-white transition-all">COMING SOON</button>
+            </div>
+        </div>
+    </div>
+</section> 
+      
+      
+      <!-- DEVELOPER PROFILE SECTION -->
+<section id="developer" class="py-24 px-6 relative overflow-hidden">
+    <!-- Background Decoration -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -z-10"></div>
+
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-black mb-4">Behind the <span class="gradient-text">Pixels</span></h2>
+            <p class="text-slate-400">The architect behind Khabitha AI's synthesis engine.</p>
+        </div>
+
+        <div class="glass rounded-[3.5rem] p-8 md:p-16 border-white/5 relative overflow-hidden group">
+            <!-- Decorative Ring -->
+            <div class="absolute -top-24 -right-24 w-64 h-64 border-[20px] border-primary/5 rounded-full transition-transform duration-700 group-hover:scale-150"></div>
+
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <!-- Profile Image with Animated Border -->
+                <div class="relative shrink-0">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-[3rem] rotate-6 scale-105 opacity-50 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <div class="relative w-56 h-56 md:w-72 md:h-72 rounded-[3rem] overflow-hidden border-2 border-white/20 shadow-2xl">
+                        <!-- Replace with your actual photo URL -->
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEigh3ctNe9xZWGugRniOLU-Z5-mUFQomfbsEnqMAEXdBiQ5_j-FUVDs5I_h5-qXosJPalEtKHCrqkLYGDi7MJKa4c-42cBte1JPVgS3TmiSBaVt7Ibxeo_tNKVjWjfAulcv9n_BqWgcR127zaKV4ew0kyc1MbqC_5PLRBaiJAZa4mxj7Sp63QXuknXBk7M" 
+                             alt="Priyangshu Sarkar" 
+                             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    </div>
+                    <!-- Experience Badge -->
+                    <div class="absolute -bottom-4 -right-4 glass px-6 py-3 rounded-2xl border-primary/30 shadow-xl">
+                        <span class="block text-2xl font-black text-white">6+</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-primary">Years Exp.</span>
+                    </div>
+                </div>
+
+                <!-- Profile Info -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+                        <i class="ph-fill ph-code"></i> Full Stack Developer
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-black mb-6 tracking-tight text-white">
+                        Priyangshu <span class="gradient-text">Sarkar</span>
+                    </h3>
+                    <p class="text-lg text-slate-400 mb-8 leading-relaxed max-w-2xl">
+                        Passionate about bridging the gap between human creativity and Artificial Intelligence. 
+                        Specializing in high-performance web applications, neural interface design, and 
+                        scalable cloud architectures. Building the next generation of creative tools.
+                    </p>
+
+                    <!-- Tech Stack Tags -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3 mb-10">
+                        <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-slate-300 hover:border-primary/50 transition-colors">React / Next.js</span>
+                        <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-slate-300 hover:border-primary/50 transition-colors">Tailwind CSS</span>
+                        <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-slate-300 hover:border-primary/50 transition-colors">AI Prompting</span>
+                        <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-slate-300 hover:border-primary/50 transition-colors">Python / AI</span>
+                        <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-slate-300 hover:border-primary/50 transition-colors">Firebase</span>
+                        <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-slate-300 hover:border-primary/50 transition-colors">Node.js</span>
+                      	<span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-slate-300 hover:border-primary/50 transition-colors">HTML</span>
+                      	<span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-slate-300 hover:border-primary/50 transition-colors">Q#</span>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                        <a href="https://www.instagram.com/_priyangshu_2" target="_blank" class="glass px-8 py-4 rounded-2xl font-bold flex items-center gap-2 hover:bg-white/10 transition-all">
+                            <i class="ph-bold ph-instagram-logo text-xl"></i> follow Me
+                        </a>
+                        <a href="mailto:ricksarkar260@gmail.com" class="btn-gradient px-8 py-4 rounded-2xl font-bold flex items-center gap-2">
+                            <i class="ph-bold ph-paper-plane-tilt text-xl"></i> Hire Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      
+      
+        <!-- Mega Footer -->
+        <footer class="bg-surface py-20 px-6 border-t border-white/5">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 text-3xl font-extrabold tracking-tighter mb-8">
+                        <i class="ph-fill ph-bounding-box text-primary text-3xl"></i>
+                        <span>Khabitha <span class="gradient-text">AI</span></span>
+                    </div>
+                    <p class="text-slate-400 mb-8 max-w-sm">Crafting the digital future with every generated pixel. Powered by open source AI technology and high-fidelity latent diffusion.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.x.com/ricksarkar260" class="w-12 h-12 glass rounded-full flex items-center justify-center text-xl hover:bg-primary/20 transition-all"><i class="ph ph-x-logo"></i></a>
+                        <a href="https://www.t.me/khabithaaibot" class="w-12 h-12 glass rounded-full flex items-center justify-center text-xl hover:bg-primary/20 transition-all"><i class="ph ph-telegram-logo"></i></a>
+                        <a href="https://www.instagram.com/_priyangshu_2" class="w-12 h-12 glass rounded-full flex items-center justify-center text-xl hover:bg-primary/20 transition-all"><i class="ph ph-instagram-logo"></i></a>
+                        
+                        <a href="#" class="w-12 h-12 glass rounded-full flex items-center justify-center text-xl hover:bg-primary/20 transition-all"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="https://github.com/Ricksark/KhabithaAI" class="w-12 h-12 glass rounded-full flex items-center justify-center text-xl hover:bg-primary/20 transition-all"><i class="ph ph-github-logo"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold text-lg mb-6">Navigation</h5>
+                    <ul class="space-y-4 text-slate-400">
+						<!-- Look for these inside your footer and replace them -->
+						<li><a href="javascript:void(0)" onclick="openPricing()" class="hover:text-white transition-colors">Pricing</a></li>
+						<li><a href="javascript:void(0)" onclick="openDocs()" class="hover:text-white transition-colors">API Docs</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Showcase</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Plugins</a></li>
+                    </ul>
+                </div>
+              	<div>
+                    <h5 class="font-bold text-lg mb-6">Polacy</h5>
+                    <ul class="space-y-4 text-slate-400">
+						<!-- Look for these inside your footer and replace them -->
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">About us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contuct us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Disclamer</a></li>
+                    </ul>
+                  <br>
+                  <h3></h3>
+                </div>
+              	
+			  	<form id="newsletter-form" class="relative">
+			  	    <input 
+			  	        id="newsletter-email"
+			  	        type="email" 
+			  	        required 
+			  	        placeholder="Email Address" 
+			  	        class="w-full bg-dark/50 border border-white/10 px-6 py-4 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary text-sm"
+			  	    >
+			  	    <button type="submit" class="absolute right-2 top-2 h-12 w-12 bg-primary rounded-xl flex items-center justify-center hover:bg-primary/80 transition-all">
+			  	        <i class="ph-bold ph-arrow-right"></i>
+			  	    </button>
+			  	</form>
+<!-- Add this line below the form for messages -->
+<p id="newsletter-status" class="mt-4 text-xs italic"></p>
+              
+            </div>
+            <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between text-sm text-slate-500 italic">
+                <p>&copy; 2025 - 2026 All Rights Khabitha AI Technologies LTD. Make in India.</p>
+                <p>Created by Priyangshu Sarkar.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- APP INTERFACE MODAL -->
+    <div id="app-interface" class="fixed inset-0 z-[100] bg-dark flex flex-col overflow-hidden">
+        <!-- App Header -->
+        <div class="glass px-6 py-3 flex justify-between items-center z-20">
+            <div onclick="hideApp()" class="flex items-center gap-2 cursor-pointer group">
+                <div class="w-8 h-8 rounded-full glass flex items-center justify-center group-hover:bg-primary/20">
+                    <i class="ph ph-caret-left font-bold"></i>
+                </div>
+                <span class="font-bold tracking-tighter">Home<span class="text-slate-500 font-medium"></span></span>
+            </div>
+            <div class="flex gap-4 items-center">
+                <span id="gen-count" class="hidden md:inline-flex px-3 py-1 bg-white/5 rounded-full text-xs font-mono">TOKENS: INFINITY</span>
+                <button class="text-slate-400 hover:text-white text-xl"><i class="ph ph-gear"></i></button>
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-fuchsia-500 flex items-center justify-center border border-white/20">
+                    <span class="font-bold text-xs italic text-white">PRO</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-1 overflow-hidden">
+            <!-- Left Sidebar Controls -->
+            <aside class="hidden lg:flex w-80 glass-dark p-6 flex-col gap-8 overflow-y-auto overflow-x-hidden scrollbar-thin">
+                <div>
+                    <label class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4 block">Dimensions</label>
+                    <div class="grid grid-cols-3 gap-2" id="aspect-ratio">
+                        <button onclick="setRatio('1:1')" class="ratio-btn active glass p-3 rounded-xl flex flex-col items-center gap-1 border-primary/40 bg-primary/10 transition-all" data-ratio="1:1">
+                            <div class="w-4 h-4 border-2 border-white rounded"></div>
+                            <span class="text-[10px]">1:1</span>
+                        </button>
+                        <button onclick="setRatio('16:9')" class="ratio-btn glass p-3 rounded-xl flex flex-col items-center gap-1 hover:bg-white/5 transition-all" data-ratio="16:9">
+                            <div class="w-6 h-3.5 border-2 border-white rounded-sm"></div>
+                            <span class="text-[10px]">16:9</span>
+                        </button>
+                        <button onclick="setRatio('9:16')" class="ratio-btn glass p-3 rounded-xl flex flex-col items-center gap-1 hover:bg-white/5 transition-all" data-ratio="9:16">
+                            <div class="w-3.5 h-6 border-2 border-white rounded-sm"></div>
+                            <span class="text-[10px]">9:16</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4 block">Art Style</label>
+                    <select id="model-style" class="w-full bg-dark/50 glass border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+                        <option value="">No Filter (Raw)</option>
+                        <option value="cinematic-movie-style-8k-ultra-detailed">Cinematic Movie</option>
+                        <option value="high-quality-anime-vibe-intense-colors">Cyber Anime</option>
+                        <option value="hyper-realistic-photographic-raw-photography">Photorealistic</option>
+                        <option value="dark-gothic-moody-renaissance-painting">Gothic Art</option>
+                        <option value="vaporwave-aesthetic-neon-colors">3D Digital Art</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4 block italic">Control Settings</label>
+                    <div class="space-y-4">
+                        <div class="glass px-4 py-2 rounded-xl">
+                            <span class="text-[10px] text-slate-500">Seed</span>
+                            <input id="image-seed" type="number" value="-1" placeholder="-1 for random" class="bg-transparent w-full text-sm outline-none mt-1">
+                        </div>
+                        
+                           <label class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4 block">AI Synthesis Engine</label>
+							<select id="model-selector" class="w-full bg-dark/50 glass border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer text-sm">
+							    <option value="lite">Khabitha Lite (Fastest)</option>
+							    
+							    <optgroup label="Flux.1 Series">
+							 							       <option value="flux" selected>Flux.1 Standard</option>
+							        <option value="flux-schnell">Flux.1 Schnell (Fast)</option>
+							        <option value="flux-1.1-pro">K.AI V1.1 Pro</option>
+							        <option value="flux.1-krea-dev">K.AI V1 Dev</option>
+							    </optgroup>
+							
+							    <optgroup label="Flux 2.0 Series (Next-Gen)">
+							        <option value="flux-2-dev">K.AI V2 Dev</option>
+							        <option value="flux.2-flex">K.AI V2 Flex</option>
+							        <option value="flux.2-max">K.AI V2 Max</option>
+							        <option value="flux-2-pro">K.AI V2 Pro</option>
+							    </optgroup>
+							
+							    <optgroup label="Specialized Engines">
+							        <option value="flux-2-klein-4b">K.AI V2 Klein 4B</option>
+							        <option value="flux-2-klein-9b-base">K.AI V2 Klein 9B Base</option>
+							        <option value="flux.1-kontext-max">Flux Kontext Max</option>
+							        <option value="flux.1-kontext-pro">Flux Kontext Pro</option>
+							    </optgroup>
+							</select>
+                    </div>
+                </div>
+
+                <div class="mt-auto">
+                    <label class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4 block">History (Session)</label>
+                    <div id="history-grid" class="grid grid-cols-2 gap-3 max-h-48 overflow-y-auto">
+                        <!-- History items -->
+                        <div class="aspect-square rounded-lg bg-white/5 flex items-center justify-center text-[10px] text-slate-600 border border-dashed border-white/10 italic">Empty</div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Canvas Center -->
+            <main class="flex-1 relative bg-[url('https://grainy-gradients.vercel.app/noise.svg')] bg-center p-6 lg:p-12 overflow-y-auto">
+                <div id="canvas-area" class="h-full flex flex-col items-center justify-center relative">
+                    <!-- Placeholder / Welcome -->
+                    <div id="placeholder" class="text-center">
+                        <div class="w-32 h-32 glass rounded-full flex items-center justify-center mx-auto mb-6 text-slate-600 border-dashed animate-pulse-slow">
+                            <i class="ph ph-image-square text-6xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-2">Studio Is Ready</h2>
+                        <p class="text-slate-500 text-sm">Describe something and press "Generate"</p>
+                    </div>
+
+                    <!-- Loader (Hidden) -->
+                    <div id="loader" class="hidden flex flex-col items-center gap-6">
+                        <div class="relative">
+                            <div class="w-24 h-24 rounded-full border-t-2 border-r-2 border-primary animate-spin"></div>
+                            <div class="absolute inset-0 w-24 h-24 rounded-full border-b-2 border-l-2 border-secondary animate-spin" style="animation-direction: reverse;"></div>
+                        </div>
+                        <p class="font-mono text-sm tracking-widest text-primary animate-pulse">GENERATEING IMAGE....</p>
+                    </div>
+
+                    
+                    <!-- Main Display Image -->
+<div id="image-result-wrapper" class="hidden group relative max-w-full h-auto rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(99,102,241,0.2)]">
+                        <img id="image-result" src="" alt="" class="max-h-[70vh] w-auto">
+                        <!-- Overlays -->
+                        <div class="absolute inset-0 bg-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                            <button onclick="downloadImage()" class="w-14 h-14 bg-white text-dark rounded-full flex items-center justify-center text-2xl hover:scale-110 transition-transform"><i class="ph ph-download-simple"></i></button>
+                            <button class="w-14 h-14 glass rounded-full flex items-center justify-center text-2xl hover:scale-110 transition-transform"><i class="ph ph-share-network"></i></button>
+                        </div>
+                    </div>
+      
+                  
+                  
+                </div>
+
+                <!-- Input Fixed Bar -->
+                <div class="max-w-4xl mx-auto mt-auto lg:absolute lg:bottom-12 lg:left-12 lg:right-12 sticky bottom-0 z-40 pb-6 lg:pb-0">
+                    <div class="glass p-3 lg:p-4 rounded-[2rem] shadow-2xl flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 relative flex items-center">
+                            <i class="ph ph-text-aa absolute left-5 text-xl text-slate-500"></i>
+                            <input id="prompt-input" type="text" placeholder="Create Image With KhabithaAI" class="w-full bg-dark/30 rounded-2xl px-14 py-4 focus:outline-none focus:ring-1 focus:ring-primary border border-white/5 transition-all">
+                            <button onclick="magicEnhance()" class="absolute right-3 px-4 py-2 glass hover:bg-white/10 rounded-xl flex items-center gap-2 text-sm text-secondary group">
+                                <i class="ph ph-sparkle group-hover:animate-spin"></i>
+                                <span class="hidden md:inline">Magic Enhance</span>
+                            </button>
+                        </div>
+                        <button onclick="generateImage()" class="btn-gradient px-12 py-4 rounded-2xl font-black tracking-widest flex items-center justify-center gap-3 active:scale-95 shadow-lg group">
+                            <span>GENERATE</span>
+                            <i class="ph ph-lightning-fill text-yellow-300 group-hover:animate-pulse"></i>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+<!-- MY ACCOUNT MODAL -->
+<div id="account-modal" class="fixed inset-0 z-[110] bg-dark/90 backdrop-blur-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
+    <div class="max-w-2xl w-full mx-6 relative">
+        <!-- Close Button -->
+        
+
+        <div class="glass-dark border border-white/10 rounded-[2.5rem] overflow-hidden shadow-2xl">
+            <!-- Header/Cover -->
+            <!--div class="h-32 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20"></div-->
+            <div class="h-32 from-primary/20 via-secondary/20 to-primary/20"><img alt="" data-original-height="208" data-original-width="500" height="133" src="https://blogger.googleusercontent.com/img/a/AVvXsEjQWBxhO1NU4PGISxXUpHWccQmEipJjPc1AglBB4484t9f9Mqv5Vjaw2ak8mpoJV5_N65pbG0We5coAdsGjKFE82yvewkPVQYYvq_VwoP-QXvXOgo6St-7AkT5UBcza8aauwFEkzoAq0iGEgbE4KqsVtr_XNnPZOHFPWai6gBhgwl1Ulj2Q8ash2ZCSMSg" width="100%" heigth="10%"/></div>
+            
+            <div class="px-8 pb-10">
+                <!-- Profile Picture Overlap -->
+                <div class="relative -bottom-1 flex flex-col md:flex-row md:items-end gap-6">
+                    <img id="acc-pfp" src="" class="w-24 h-24 rounded-3xl border-4 border-dark shadow-2xl">
+                    <div class="pb-2">
+                        <h2 id="acc-name" class="text-3xl font-black tracking-tight">User Name</h2>
+                        <p id="acc-email" class="text-slate-400 font-medium">user@email.com</p>
+                    </div>  
+                </div>
+              <br><br><br><br><br>
+
+<div>
+    
+</div>
+              
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+                    <div class="glass p-5 rounded-2xl border-white/5">
+                        <p class="text-[10px] text-slate-50 font-bold uppercase tracking-tighter mb-1">Total Created</p>
+                        <p id="acc-total-gen" class="text-2xl font-black gradient-text">0</p>
+                    </div>
+                    <div class="glass p-5 rounded-2xl border-white/5">
+                        <p class="text-[10px] text-slate-50 font-bold uppercase tracking-tighter mb-1">Token Status</p>
+                        <p class="text-2xl font-black text-white">Infinite</p>
+                    </div>
+                    <div class="glass p-5 rounded-2xl border-white/5 col-span-2 md:col-span-1">
+                        <p class="text-[10px] text-slate-50 font-bold uppercase tracking-tighter mb-1">Account Tier</p>
+                        <div class="flex items-center gap-2">
+                            <i class="ph-fill ph-crown text-amber-100 text-xl"></i>
+                            <p class="text-xl font-black text-white">PRO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings/Actions -->
+                <div class="mt-8 space-y-3">
+                    <h4 class="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">Quick Settings</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <button class="glass px-6 py-3 rounded-xl text-sm font-bold hover:bg-white/10 transition-all flex items-center gap-2">
+                            <i class="ph ph-pencil-line"></i> Edit Profile
+                        </button>
+                        <button class="glass px-6 py-3 rounded-xl text-sm font-bold hover:bg-white/10 transition-all flex items-center gap-2">
+                            <i class="ph ph-shield-check"></i> Security
+                        </button>
+                        <button onclick="handleLogout(); hideAccountSection();" class="bg-red-500/10 text-red-400 border border-red-500/20 px-6 py-3 rounded-xl text-sm font-bold hover:bg-red-500/20 transition-all flex items-center gap-2">
+                            <i class="ph ph-sign-out"></i> Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SETTINGS MODAL -->
+<div id="settings-modal" class="fixed inset-0 z-[150] hidden items-center justify-center p-4">
+    <!-- Backdrop -->
+    <div onclick="closeSettings()" class="absolute inset-0 bg-dark/80 backdrop-blur-sm"></div>
+    
+    <!-- Modal Content -->
+    <div class="relative w-full max-w-2xl glass-dark rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl flex flex-col md:flex-row h-[80vh] md:h-auto">
+        <!-- Sidebar -->
+        <aside class="w-full md:w-48 bg-white/5 p-6 border-b md:border-b-0 md:border-r border-white/10">
+            <h3 class="text-xl font-bold mb-6">Settings</h3>
+            <nav class="flex md:flex-col gap-2 overflow-x-auto">
+                <button onclick="switchTab('general')" class="tab-btn active text-sm px-4 py-2 rounded-xl bg-primary text-white font-medium transition-all text-left">General</button>
+                <button onclick="switchTab('studio')" class="tab-btn text-sm px-4 py-2 rounded-xl hover:bg-white/5 text-slate-400 font-medium transition-all text-left">Studio</button>
+                <button onclick="switchTab('api')" class="tab-btn text-sm px-4 py-2 rounded-xl hover:bg-white/5 text-slate-400 font-medium transition-all text-left">API Access</button>
+            </nav>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="flex-1 p-8 overflow-y-auto">
+            <div class="flex justify-between items-start mb-8">
+                <div id="tab-title">
+                    <h4 class="text-2xl font-bold">General Settings</h4>
+                    <p class="text-slate-400 text-sm">Manage your profile and account preferences.</p>
+                </div>
+                <button onclick="closeSettings()" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-white/10">
+                    <i class="ph ph-x"></i>
+                </button>
+            </div>
+
+            <!-- Tab: General -->
+            <div id="tab-general" class="setting-content space-y-6">
+                <div>
+                    <label class="text-xs font-bold text-slate-500 uppercase block mb-2">Display Name</label>
+                    <input type="text" id="set-name" class="w-full bg-dark/50 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-1 focus:ring-primary" placeholder="Your Name">
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-slate-500 uppercase block mb-2">Email Address</label>
+                    <input type="email" id="set-email" readonly class="w-full bg-white/5 border border-white/5 rounded-xl px-4 py-3 text-slate-500 cursor-not-allowed">
+                </div>
+                <div class="pt-4 border-t border-white/5">
+                    <button class="text-red-400 text-sm font-medium hover:underline">Delete Account</button>
+                </div>
+              	<div class="mt-8 p-6 glass border-primary/2 rounded-[1rem] bg-primary/5">
+    				<h4 class="text-[10px] font-black text-primary uppercase tracking-[0.2em] mb-4">Activate Premium</h4>
+    					<div class="flex gap-3">
+        				<input type="text" id="redeem-input" placeholder="Enter 64-bit Key" class="flex-1 bg-dark/50 border border-white/10 px-5 py-4 rounded-2xl text-sm outline-none focus:ring-1 focus:ring-primary">
+        				<button onclick="redeemSubscription()" class="btn-gradient px-8 py-4 rounded-2xl font-bold text-sm">REDEEM</button>
+    				</div>
+				</div>
+            </div>
+
+            <!-- Tab: Studio -->
+            <div id="tab-studio" class="setting-content hidden space-y-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h5 class="font-bold">Safe Search (NSFW Filter)</h5>
+                        <p class="text-xs text-slate-400">Blur potentially sensitive generations.</p>
+                    </div>
+                    <div class="w-12 h-6 bg-primary rounded-full relative cursor-pointer"><div class="absolute right-1 top-1 w-4 h-4 bg-white rounded-full"></div></div>
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-slate-500 uppercase block mb-2">Default Engine</label>
+                    <select class="w-full bg-dark/50 border border-white/10 rounded-xl px-4 py-3">
+                        <option>Flux.1 (High Fidelity)</option>
+                        <option>Lite (Speed Optimized)</option>
+                    </select>
+                </div>
+              
+            </div>
+
+            <!-- Tab: API -->
+            <div id="tab-api" class="setting-content hidden space-y-6">
+                <div class="glass p-4 rounded-2xl bg-primary/5 border-primary/20">
+                    <p class="text-xs text-primary font-bold mb-2 uppercase">Your API Key</p>
+                    <div class="flex gap-2">
+                        <input type="password" value="kh_live_8829102X99" readonly class="flex-1 bg-transparent font-mono text-sm border-none outline-none">
+                        <button class="text-primary hover:text-white"><i class="ph ph-copy"></i></button>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-500">Use this key to authenticate requests to the <code>/prompt</code> endpoint. Keep it secret!</p>
+            </div>
+            
+            <div class="mt-12 flex justify-end">
+                <button onclick="closeSettings()" class="btn-gradient px-8 py-3 rounded-xl font-bold">Save Changes</button>
+            </div>
+        </main>
+    </div>
+</div>
+  
+<!---------------------------------------------- PRICING MODAL ---------------------------------------------------->
+<div id="pricing-modal" class="fixed inset-0 z-[150] hidden items-center justify-center p-4">
+    <div onclick="closePricing()" class="absolute inset-0 bg-dark/90 backdrop-blur-md"></div>
+    <div class="relative w-full max-w-4xl glass-dark rounded-[2.5rem] border border-white/10 p-8 md:p-12 overflow-y-auto max-h-[90vh]">
+        <div class="flex justify-between items-center mb-10">
+            <h2 class="text-3xl font-bold">Simple <span class="gradient-text">Pricing</span></h2>
+            <button onclick="closePricing()" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-white/10"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Free -->
+            <div class="glass p-6 rounded-3xl border-white/5 flex flex-col">
+                <h3 class="text-xl font-bold mb-2">Hobby</h3>
+                <div class="text-3xl font-black mb-4">₹0<span class="text-sm text-slate-500 font-normal">/mo</span></div>
+                <ul class="text-sm text-slate-400 space-y-3 mb-8 flex-1">
+                    <li><i class="ph ph-check text-primary"></i> 50 Generations/day</li>
+                    <li><i class="ph ph-check text-primary"></i> Standard Speed</li>
+                    <li><i class="ph ph-x text-red-500"></i> No Flux.1 Access</li>
+                </ul>
+                <button class="w-full py-3 rounded-xl bg-white/5 font-bold">Current Plan</button>
+            </div>
+            <!-- Pro -->
+            <div class="glass p-6 rounded-3xl border-primary/30 bg-primary/5 flex flex-col relative scale-105">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Popular</div>
+                <h3 class="text-xl font-bold mb-2">Pro</h3>
+                <div class="text-3xl font-black mb-4">₹249<span class="text-sm text-slate-500 font-normal">/mo</span></div>
+                <ul class="text-sm text-slate-300 space-y-3 mb-8 flex-1">
+                    <li><i class="ph ph-check text-primary"></i> Unlimited Generations</li>
+                    <li><i class="ph ph-check text-primary"></i> Flux.1 & Ultra Engines</li>
+                    <li><i class="ph ph-check text-primary"></i> Priority GPU Queue</li>
+                </ul>
+                <button class="w-full py-3 rounded-xl btn-gradient font-bold" >Upgrade Now</button>
+            </div>
+            <!-- Enterprise -->
+            <div class="glass p-6 rounded-3xl border-white/5 flex flex-col">
+                <h3 class="text-xl font-bold mb-2">API Studio</h3>
+                <div class="text-3xl font-black mb-4">₹499<span class="text-sm text-slate-500 font-normal">/mo</span></div>
+                <ul class="text-sm text-slate-400 space-y-3 mb-8 flex-1">
+                    <li><i class="ph ph-check text-primary"></i> Commercial Rights</li>
+                    <li><i class="ph ph-check text-primary"></i> Dedicated H100 Node</li>
+                    <li><i class="ph ph-check text-primary"></i> Custom Model Fine-tuning</li>
+                </ul>
+                <button class="w-full py-3 rounded-xl bg-white/5 font-bold" alart='coming soon!'>Coming Soon</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- API DOCS MODAL -->
+<div id="api-docs-modal" class="fixed inset-0 z-[150] hidden items-center justify-center p-4">
+    <div onclick="closeDocs()" class="absolute inset-0 bg-dark/90 backdrop-blur-md"></div>
+    <div class="relative w-full max-w-3xl glass-dark rounded-[2.5rem] border border-white/10 p-8 overflow-y-auto max-h-[90vh]">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold">API <span class="gradient-text">Documentation</span></h2>
+            <button onclick="closeDocs()" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-white/10"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="space-y-6 text-slate-300">
+            <div>
+                <h4 class="text-white font-bold mb-2">Endpoint</h4>
+                <code class="block bg-black/40 p-4 rounded-xl border border-white/5 text-primary text-sm">https://image.pollinations.ai/prompt/{prompt}</code>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-2">Parameters</h4>
+                <div class="space-y-2">
+                    <div class="flex justify-between border-b border-white/5 py-2"><span>width / height</span><span class="text-slate-500">Resolution (max 2048)</span></div>
+                    <div class="flex justify-between border-b border-white/5 py-2"><span>seed</span><span class="text-slate-500">Integer for reproducibility</span></div>
+                    <div class="flex justify-between border-b border-white/5 py-2"><span>model</span><span class="text-slate-500">'flux' or 'lite'</span></div>
+                </div>
+            </div>
+            <div class="p-6 bg-amber-500/10 border border-amber-500/20 rounded-2xl">
+                <p class="text-amber-200 text-xs flex gap-2"><i class="ph-fill ph-warning"></i> Keep your API keys private. Never expose them in client-side code.</p>
+            </div>
+        </div>
+    </div>
+</div> 
+ 
+<!-- ADMIN LOGIN MODAL -->
+<div id="admin-login-modal" class="fixed inset-0 z-[200] bg-dark hidden items-center justify-center p-4">
+    <div class="glass-dark p-8 rounded-[2rem] w-full max-w-md border border-white/10">
+        <h2 class="text-2xl font-bold mb-6 text-center">Admin <span class="gradient-text">Access</span></h2>
+        <div class="space-y-4">
+            <input type="text" id="admin-user" placeholder="Username" class="w-full bg-dark/50 border border-white/10 p-4 rounded-xl outline-none focus:ring-1 focus:ring-primary">
+            <input type="password" id="admin-pass" placeholder="Password" class="w-full bg-dark/50 border border-white/10 p-4 rounded-xl outline-none focus:ring-1 focus:ring-primary">
+            <button onclick="attemptAdminLogin()" class="w-full btn-gradient py-4 rounded-xl font-bold">Login to Console</button>
+            <button onclick="toggleAdminModal(false)" class="w-full text-slate-500 text-sm">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- ADMIN LOGIN -->
+<div id="admin-login-modal" class="fixed inset-0 z-[300] bg-dark/95 backdrop-blur-xl hidden items-center justify-center p-4">
+    <div class="glass-dark p-8 rounded-[2.5rem] w-full max-w-md border border-white/10 shadow-2xl">
+        <div class="text-center mb-8">
+            <i class="ph-fill ph-shield-check text-5xl text-primary mb-2"></i>
+            <h2 class="text-2xl font-black">Admin <span class="gradient-text">Console</span></h2>
+            <p class="text-slate-500 text-sm">Authorized Personnel Only</p>
+        </div>
+        <div class="space-y-4">
+            <input type="text" id="admin-user" placeholder="Username" class="w-full bg-dark/50 border border-white/10 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-primary">
+            <input type="password" id="admin-pass" placeholder="Password" class="w-full bg-dark/50 border border-white/10 p-4 rounded-2xl outline-none focus:ring-2 focus:ring-primary">
+            <button onclick="attemptAdminLogin()" class="w-full btn-gradient py-4 rounded-2xl font-bold shadow-lg">Enter Dashboard</button>
+            <button onclick="closeAdmin()" class="w-full text-slate-500 text-xs uppercase tracking-widest font-bold">Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- ADMIN DASHBOARD -->
+<div id="admin-dashboard" class="fixed inset-0 z-[310] bg-dark hidden flex-col overflow-hidden">
+    <nav class="glass px-8 py-4 flex justify-between items-center border-b border-white/10">
+        <div class="flex items-center gap-2 font-bold"><i class="ph-fill ph-command text-primary"></i> KHABITHA HQ</div>
+        <button onclick="location.reload()" class="bg-red-500/10 text-red-400 px-4 py-2 rounded-xl text-xs font-bold border border-red-500/20">LOGOUT</button>
+    </nav>
+    <div class="flex-1 p-8 overflow-y-auto bg-[url('https://grainy-gradients.vercel.app/noise.svg')]">
+        <div class="max-w-5xl mx-auto space-y-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Generate Section -->
+                <div class="glass p-8 rounded-[2rem] border-white/5 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10"><i class="ph ph-key text-8xl"></i></div>
+                    <h3 class="text-xl font-bold mb-6">Create 1-Month Key</h3>
+                    <button onclick="createNewKey()" class="w-full btn-gradient py-6 rounded-2xl font-black text-lg shadow-xl hover:scale-[1.02] transition-transform">
+                        GENERATE 64-BIT KEY
+                    </button>
+                    <div id="key-display" class="hidden mt-6 p-6 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl text-center">
+                        <p class="text-[10px] font-bold text-emerald-400 uppercase mb-2">New Subscription Code</p>
+                        <code id="key-string" class="text-2xl font-mono text-white tracking-widest selection:bg-emerald-500"></code>
+                        <p class="text-[10px] text-slate-500 mt-2 italic">Valid for 30 days after user activation</p>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="glass p-8 rounded-[2rem] border-white/5">
+                    <h3 class="text-xl font-bold mb-6">Active Keys in Pool</h3>
+                    <div id="admin-key-list" class="space-y-3 max-h-[300px] overflow-y-auto pr-2">
+                        <div class="text-slate-600 italic text-sm">Checking Redis database...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  
+<!-----------------------------------------------------------------------------= PRIVATE ACCESS OVERLAY =----------------------------------------------------------------------------------------------->
+<div id="private-lock" class="fixed inset-0 z-[10000] bg-dark flex flex-col items-center justify-center p-6 text-center">
+    <!-- Background Glows -->
+    <div class="fixed top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] -z-10 animate-glow"></div>
+    
+    <div class="glass p-10 rounded-[3rem] border-white/10 max-w-lg w-full shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-primary"></div>
+        
+        <i class="ph-fill ph-lock-laminated text-6xl text-primary mb-6"></i>
+        
+        <h2 class="text-3xl font-black mb-4 tracking-tight text-white">Private <span class="gradient-text">Alpha</span> Access</h2>
+        <p class="text-slate-400 mb-8 leading-relaxed">
+            Khabitha AI is currently in a restricted maintenance phase. 
+            Only authorized developer accounts can access the dashboard.
+        </p>
+
+        <div id="lock-auth-ui" class="space-y-4">
+            <!-- This will show if the user is NOT logged in or NOT authorized -->
+            <button onclick="handleGoogleLogin()" class="btn-gradient w-full py-4 rounded-2xl font-bold flex items-center justify-center gap-3">
+                <i class="ph-bold ph-google-logo text-xl"></i> Authorized Developer Login
+            </button>
+            <p id="lock-error" class="text-red-400 text-xs font-bold hidden">Access Denied: Email not on whitelist.</p>
+        </div>
+
+        <div class="mt-10 pt-6 border-t border-white/5">
+            <p class="text-[10px] text-slate-500 uppercase tracking-widest font-black">
+                Restriction active until August 18, 2026
+            </p>
+        </div>
+    </div>
+</div>  
+<!--------------------------------------------------- MOBILE SIDEBAR ---------------------------------------------------->
+<div id="mobile-sidebar-overlay" onclick="toggleMobileMenu()" class="fixed inset-0 bg-dark/60 backdrop-blur-sm z-[150] opacity-0 pointer-events-none transition-all duration-300"></div>
+
+<aside id="mobile-sidebar" class="fixed top-0 right-0 bottom-0 w-72 glass-dark border-l border-white/10 z-[160] translate-x-full transition-transform duration-500 ease-out flex flex-col">
+    <!-- Sidebar Header -->
+    <div class="p-6 border-b border-white/5 flex justify-between items-center">
+        <div class="flex items-center gap-2 font-extrabold tracking-tighter">
+            <i class="ph-fill ph-bounding-box text-primary text-2xl"></i>
+            <span>Khabitha <span class="gradient-text">AI</span></span>
+        </div>
+        <button onclick="toggleMobileMenu()" class="text-slate-400">
+            <i class="ph-bold ph-x text-xl"></i>
+        </button>
+    </div>
+
+    <!-- Sidebar Links -->
+    <nav class="flex-1 p-6 space-y-4">
+        <a href="#features" onclick="toggleMobileMenu()" class="flex items-center gap-3 text-slate-300 hover:text-white py-3 border-b border-white/5 font-medium transition-colors">
+            <i class="ph ph-sparkle text-primary"></i> Features
+        </a>
+        <a href="#gallery" onclick="toggleMobileMenu()" class="flex items-center gap-3 text-slate-300 hover:text-white py-3 border-b border-white/5 font-medium transition-colors">
+            <i class="ph ph-image text-primary"></i> Gallery
+        </a>
+		<a href="#developer" onclick="toggleMobileMenu()" class="flex items-center gap-3 text-slate-300 hover:text-white py-3 border-b border-white/5 font-medium transition-colors">
+		    <i class="ph ph-user text-primary"></i> Developer
+		</a>
+        <a href="javascript:void(0)" onclick="openPricing(); toggleMobileMenu();" class="flex items-center gap-3 text-slate-300 hover:text-white py-3 border-b border-white/5 font-medium transition-colors">
+            <i class="ph ph-credit-card text-primary"></i> Pricing
+        </a>
+        <a href="javascript:void(0)" onclick="openDocs(); toggleMobileMenu();" class="flex items-center gap-3 text-slate-300 hover:text-white py-3 border-b border-white/5 font-medium transition-colors">
+            <i class="ph ph-code text-primary"></i> API Docs
+        </a>
+        <a href="javascript:void(0)" onclick="toggleShowcase()" class="flex items-center gap-3 text-slate-300 hover:text-white py-3 border-b border-white/5 font-medium transition-colors">
+            <i class="ph ph-megaphone text-primary"></i> Showcase
+        </a>
+    </nav>
+
+    <!-- Sidebar Footer / Auth -->
+    <div class="p-6 bg-white/5">
+        <div id="mobile-auth-placeholder">
+            <!-- This will be populated by the updateUI function if needed -->
+            <button onclick="handleGoogleLogin(); toggleMobileMenu();" class="w-full btn-gradient py-4 rounded-2xl font-bold flex items-center justify-center gap-2">
+                <i class="ph-bold ph-google-logo"></i> Login
+            </button>
+        </div>
+    </div>
+</aside>
+
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="kai.js"></script> 
+  
+  
+</body>
+</html>

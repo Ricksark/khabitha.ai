@@ -1,0 +1,102 @@
+body { background-color: #020617; color: white; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glass-dark { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-text { background: linear-gradient(to right, #6366f1, #d946ef); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-gradient { background: linear-gradient(135deg, #6366f1 0%, #d946ef 100%); transition: all 0.3s ease; }
+        .btn-gradient:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.5); }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+
+        .image-card:hover .overlay { opacity: 1; }
+        .marquee { display: flex; overflow: hidden; user-select: none; gap: 2rem; }
+        .marquee-content { flex-shrink: 0; display: flex; justify-content: space-around; min-width: 100%; gap: 2rem; animation: scroll 40s linear infinite; }
+        @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(calc(-100% - 2rem)); } }
+        
+        #app-interface { display: none; opacity: 0; transition: opacity 0.5s ease; }
+      
+      /* Add this inside your <style> tag */
+#showcase-panel div {
+    animation: slideInUp 0.5s ease out forwards;
+}
+
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+      
+      
+      
+/* Profile Dropdown Animation */
+#profile-dropdown.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+#profile-dropdown {
+    opacity: 0;transform: translateY(-10px) scale(0.95);pointer-events: none;transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}          
+      
+      
+/* ------============================LMS UNIVERSAL OPTIMIZATIONS==============================------- */
+[lms-perf="HIGH_LOAD"] .marquee-content {animation-play-state: paused !important; /* Stop background marquee during synthesis */}
+
+[lms-perf="HIGH_LOAD"] .animate-glow, [lms-perf="HIGH_LOAD"] .animate-float {animation: none !important; /* Stop heavy background glows */}
+
+[lms-perf="LOW"] * {transition: none !important; /* Kill transitions if device is struggling */}
+
+#lms-hud {backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px); /* Compatibility for Safari */}           
+
+  
+
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px 0;
+}
+
+.animate-scroll-left {
+    display: flex;
+    width: max-content;
+    /* Animation name changed to scrollLeft */
+    animation: scrollLeft 20s linear infinite;
+}
+
+.content-group {
+    display: flex;
+    gap: 2rem; 
+    padding-right: 2rem; 
+}
+
+/* 
+   THE LOGIC: 
+   To move Left: Start at 0% (natural position)
+   and move to -50% (shifting half the total width to the left).
+*/
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause on hover */
+.marquee-container:hover .animate-scroll-left {
+    animation-play-state: paused;
+}
+
+/* Optional styling */
+.item {
+    background: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-family: sans-serif;
+}
